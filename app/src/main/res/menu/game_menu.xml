@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView"/>
+
+    <item
+        android:id="@+id/folder"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="Open" />
+
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/ic_baseline_fiber_new_24"
+        android:title="New game">
+        <menu>
+            <item
+                android:id="@+id/create_new"
+                android:title="Create new" />
+            <item
+                android:id="@+id/open"
+                android:title="Open" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="@string/help" />
+</menu>
